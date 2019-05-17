@@ -1,0 +1,25 @@
+{
+    "id": "5c37984f4ae8de7770b50d0a",
+    "database": "foo",
+    "collection": "bar",
+    "roles": [
+        {
+            "name": "owner",
+            "apply_when": {
+                "_id": "%%user.id"
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "string"
+            }
+        }
+    }
+}
